@@ -1,0 +1,15 @@
+<div class="content">
+  <h4>bootstrap datepicker value not binding:</h4>
+  <div class="row">
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      
+
+            <form [formGroup]="passengerForm.formGroup">
+                <formly-form [form]="passengerForm.formGroup" [model]="passengerForm.model"
+                  [fields]="passengerForm.fields" [options]="passengerForm.options">
+                </formly-form>
+              </form>
+              {{this.passengerForm.model|json}}
+    </div>
+  </div>
+</div>
